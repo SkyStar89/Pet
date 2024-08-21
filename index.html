@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote um Filhotinho ❤︎ </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #eeca9b;
+        }
+        .option {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #000;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: #d8a366;
+        }
+        .option img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        #result {
+            margin-top: 30px;
+            font-size: 1.5em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adote um Filhotinho ❤︎</h1>
+    <div class="option" onclick="makeChoice('gato')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcbmsSS8TCx1DlTS96jYdG_iJ41vtiZDfB8g&s" alt="Filhote de Gato">
+        <p>Filhote de Gato</p>
+    </div>
+    <div class="option" onclick="makeChoice('cachorro')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx8bxK0S18tYgVDvsvVCVmIYQdn49oz-WqEZ2SeekMsWpk8awO8g4Jzy6d1mM75tZzbtw&usqp=CAU" alt="Filhote de Cachorro">
+        <p>Filhote de Cachorro</p>
+    </div>
+    <p id="result"></p>
+
+    <script>
+        function makeChoice(choice) {
+            let resultText;
+            if (choice === 'gato') {
+                resultText = 'Você escolheu adotar um filhote de gatinho ฅ^•ﻌ•^ฅ';
+            } else {
+                resultText = 'Você escolheu adotar um filhote de cachorro ૮ • ﻌ - ა';
+            }
+            document.getElementById('result').innerText = resultText;
+        }
+    </script>
+</body>
+</html>
+
